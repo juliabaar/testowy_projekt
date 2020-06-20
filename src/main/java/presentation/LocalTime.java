@@ -18,15 +18,15 @@ public class LocalTime {
     public static void tokyoTime() {
 
         Clock clock = Clock.system(ZoneId.of("Asia/Tokyo"));
-        LocalDateTime ldt = LocalDateTime.now(clock);
-        System.out.println("Japan Time: " + ldt);
+        LocalDateTime now = LocalDateTime.now(clock);
+        System.out.println("Japan Time: " + now);
 
     }
 
     public static void dateFormat() {
-        LocalDateTime ldt = LocalDateTime.now();
+        LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd hh:mm:ss");
-        System.out.println("Date in format yyyy/MM/dd yyyy/mm/dd hh:mm:ss: " + formatter.format(ldt));
+        System.out.println("Date in format yyyy/MM/dd hh:mm:ss: " + formatter.format(now));
 
     }
 
