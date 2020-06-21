@@ -39,7 +39,7 @@ public class UjemneTablica {
         }
         System.out.println("\n");
     }
-    
+
     public static void main(String[] args) {
         int[] tablica = {-1, 0, 3, 5, -2, -5};
         int[] newtab = displayMinusTab(tablica);
