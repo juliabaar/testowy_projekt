@@ -28,14 +28,23 @@ public class UjemneTablica {
         return nowa;
     }
 
-    public static void main(String[] args) {
-        int[] tablica = {-1, 0, 3, 5, -2,-5};
-        int lUjemnych = ileUjemnych(tablica);
-        System.out.println("Liczba ujemnych cyfr w tablicy to: " + lUjemnych);
-        int[] tablicaUjemna = nowaTablica(lUjemnych, tablica);
-        for (int liczba : tablicaUjemna) {
-            System.out.print(liczba + " ");
+    public static int[] displayMinusTab(int[] tab) {
+        int count = ileUjemnych(tab);
 
+        return nowaTablica(count, tab);
+    }
+    public static void printTable(int[] tab) {
+        for (int liczba : tab) {
+            System.out.print("[" + liczba + "] ");
         }
+        System.out.println("\n");
+    }
+    
+    public static void main(String[] args) {
+        int[] tablica = {-1, 0, 3, 5, -2, -5};
+        int[] newtab = displayMinusTab(tablica);
+        printTable(newtab);
+
     }
 }
+

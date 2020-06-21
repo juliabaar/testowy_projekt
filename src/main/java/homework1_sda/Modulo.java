@@ -6,7 +6,7 @@ public class Modulo {
 
     public static int modulo(int x, int y) {
         int wynik = (int) x / y;
-        return x - (wynik * y);
+        return x - (wynik * y); //wynik ile razy mieści się y "pełny" różnica to ile zostaje
     }
 // zad. 10
     public static boolean isModulo(int modulo, int x, int y) {
@@ -17,6 +17,7 @@ public class Modulo {
     }
 
     public static void main(String[] args) {
+        System.out.println(20%9);
         int modulo = modulo(5, 3);
         System.out.println(modulo);
         if (isModulo(modulo, 5, 3)) {
