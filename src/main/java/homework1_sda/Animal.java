@@ -4,7 +4,7 @@ package homework1_sda;
   //  Dog and Cow. Utwórz tablicę obiektów zwierząt różnych klas, wypisz wydawane przez nich
   //          odgłosy
 
-public interface Animal {
+public interface Animal { // jest na zielono bo interface
     String makeSound(); // bez dostepnosci bo wszystko jest public w takim interface
 
 }

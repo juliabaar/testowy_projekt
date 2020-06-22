@@ -20,7 +20,7 @@ public class Ex1 {
             setofNames.add("Maja");
             System.out.println("size before: " + setofNames.size());
             setofNames.add("Maja");
-            System.out.println("size before: " + setofNames.size()); // dodajemy to samo imie, więc z uwagi na kolekcje Set nie doda się taka sama zmienna
+            System.out.println("size now: " + setofNames.size()); // dodajemy to samo imie, więc z uwagi na kolekcje Set nie doda się taka sama zmienna
         }
 
         public static void exMap(){
