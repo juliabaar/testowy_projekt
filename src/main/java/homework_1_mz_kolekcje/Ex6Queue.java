@@ -28,13 +28,13 @@ public class Ex6Queue {
     }
 
     public void randomNumber(int numberNumbers) {
-        for (int i = 0; i <= numberNumbers; i++) {
+        for (int i = 0; i < numberNumbers; i++) { // nie podajemy size w warunku, więc nie ma <= żeby wyswietlalo o 1 element mniej
             int random = (int) (Math.random() * 100);
             queue.add(random);
         }
     }
 
-    public void displayNumbers() {
+    public void displayNumbers() { // czemu nie mozna uzywac pętli for
        int i = 0;
        while(i <= queue.size()){
             System.out.print("[ " + queue.poll() + " ]");
