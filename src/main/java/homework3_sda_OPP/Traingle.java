@@ -1,6 +1,6 @@
 package homework3_sda_OPP;
 
-public class Traingle {
+public class Traingle implements Figure {
 
     private int height;
     private int lenght;
@@ -8,10 +8,11 @@ public class Traingle {
     public Traingle(int height, int lenght){
         this.height = height;
         this.lenght = lenght;
+
     }
 
-    public double getArea(int height, int lenght){
+    @Override
+    public Double getArea() {
         return height*lenght*(1/2d);
     }
-
 }
