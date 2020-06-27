@@ -1,6 +1,7 @@
 package homework_1_mz_kolekcje;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 //Utwórz listę ArrayList przechowującą imiona.
 //a. Dodaj 5 imion do listy,
@@ -15,6 +16,8 @@ public class Ex4Names {
         displayNames();
         System.out.println();
         displatNamesBackwords();
+        Collections.reverse(listOfNames); // łatwe odwracania kolekcji!
+        System.out.println(listOfNames); // łatwe odwracanie kolekcji
     }
 
     public void addNames(){
@@ -27,8 +30,12 @@ public class Ex4Names {
     }
 
     public void displayNames() {
-        for (int i = 0; i < listOfNames.size(); i++) {
-            System.out.print(listOfNames.get(i) + " ");
+      //  for (int i = 0; i < listOfNames.size(); i++) {
+      //      System.out.print(listOfNames.get(i) + " ");
+       // }
+
+        for (String element: listOfNames) { // lista stringów, element bierze sobie kolejny obiekt, to samo co wyzej!
+            System.out.println(element);
         }
     }
         public void displatNamesBackwords(){

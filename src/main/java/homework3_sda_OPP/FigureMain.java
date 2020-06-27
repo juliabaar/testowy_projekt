@@ -23,5 +23,9 @@ public class FigureMain {
             return area;
         }
 
+    public static void main(String[] args) {
+
+    }
+
     }
 
