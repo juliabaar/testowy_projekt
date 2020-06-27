@@ -13,6 +13,6 @@ public class Traingle implements Figure {
 
     @Override
     public Double getArea() {
-        return height*lenght*(1/2d);
+        return (double) height*lenght*(1/2d);
     }
 }

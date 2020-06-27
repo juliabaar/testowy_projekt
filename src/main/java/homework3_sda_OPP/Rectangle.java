@@ -11,6 +11,6 @@ public class Rectangle implements Figure {
 
     @Override
     public Double getArea() {
-        return length*width;
+        return (double) length*width;
     }
 }

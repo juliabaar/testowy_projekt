@@ -3,7 +3,7 @@ package homework3_sda_OPP;
 public class Circle implements Figure {
 
     private int radius;
-    private static final double PI = 3.14;
+
 
     public Circle(int radius){
         this.radius = radius;
@@ -12,7 +12,7 @@ public class Circle implements Figure {
 
     @Override
     public Double getArea() {
-        return radius * radius * PI;
+        return (double) radius * radius * Math.PI;
     }
 }
 
