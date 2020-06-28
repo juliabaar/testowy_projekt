@@ -14,7 +14,8 @@ public class FigureMain {
         }
         return area;
     }
-
+// 13. Mając podaną powierzchnię X, która może zostać pokryta przez farbę, napisz metodę, która
+//sprawdzi, czy daną ilością farby można zamalować wszystkie podane figury.
     public static boolean isEnough(List<Figure> listOfFigures, double possibleArea){ //.13
         return countArea(listOfFigures) <= possibleArea;
     }
